@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tabs">
+        <item >@string/main_tab_draw</item>
+        <item >@string/main_tab_image</item>
+        <item >@string/main_tab_cloud</item>
+    </string-array>
+</resources>

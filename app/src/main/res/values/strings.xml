@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App_Painter</string>
+    <string name="main_tab_draw">繪圖</string>
+    <string name="main_tab_image">畫廊</string>
+    <string name="main_tab_cloud">雲端</string>
+
+    <string name="toast_permission_refuse">拒絕權限要求,將無法使用此功能。</string>
+    <string name="dialog_message_goto_setting">是否前往開啟權限？</string>
+    <string name="dialog_go">前往</string>
+</resources>

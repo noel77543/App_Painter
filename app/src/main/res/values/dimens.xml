@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_height">50dp</dimen>
+    <dimen name="draw_drawer_width">90dp</dimen>
+    <dimen name="draw_color_item_width">40dp</dimen>
+</resources>
