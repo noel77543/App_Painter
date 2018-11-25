@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ColorDataAdapterBinding">
+
+        <variable
+            name="ColorData"
+            type="tw.noel.sung.com.app_painter.draw.model.ColorData" />
+    </data>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view"
+        android:layout_width="@dimen/draw_color_item_width"
+        android:layout_height="@dimen/draw_color_item_width"
+        android:layout_margin="2.5dp"
+        app:setColor="@{ColorData.color}">
+
+    </View>
+</layout>

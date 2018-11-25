@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/main_color"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/action_bar_height"
-    android:orientation="horizontal"
-    app:layout_scrollFlags="scroll|enterAlways">
+    android:background="@color/main_color"
+    android:orientation="horizontal">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/img_logo"
+        android:contentDescription="@string/app_name" />
 
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginEnd="55dp"
-        android:gravity="center"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
-</LinearLayout>
+</RelativeLayout>

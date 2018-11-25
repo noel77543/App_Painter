@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="main_color">#33B5E5</color>
-    <color name="draw_drawer_bg">#b2e1e1e1</color>
+    <color name="draw_drawer_bg">#a1ffffff</color>
 </resources>

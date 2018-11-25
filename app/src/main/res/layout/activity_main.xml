@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data class="MainActivityBinding">
 
     </data>
 
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/coordinator_layout"
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
+        <include layout="@layout/module_action_bar" />
 
-        <android.support.design.widget.AppBarLayout
-            android:id="@+id/app_bar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <include layout="@layout/module_action_bar" />
-
-        </android.support.design.widget.AppBarLayout>
-
-
-        <LinearLayout
-            android:id="@+id/linear_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-            <include
-                layout="@layout/module_container" />
-        </LinearLayout>
+        <include layout="@layout/module_container"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"/>
 
         <android.support.v4.app.FragmentTabHost
             android:id="@+id/tab_host"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
-            android:orientation="vertical"
-            app:layout_anchor="@id/linear_layout"
-            app:layout_anchorGravity="bottom"
-            app:layout_behavior=".util.behavior.BottomViewBehavior" />
+            android:orientation="vertical" />
 
-    </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
 </layout>
